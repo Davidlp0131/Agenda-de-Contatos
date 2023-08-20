@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./media/contact-book.png" alt="Logo">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form>
+            <input type="text" required placeholder="Nome Contato" alt="Nome do contato" title="Insira o nome do contato"/>
+            <input type="number" required placeholder="Número Contato" alt="Número do contato" title="Insira o número do contato"/>
+            <button type="submit">Adicionar</button>
+        </form>
+        <table cellspacing="0">
+           <thead>
+            <tr>
+                <th>Nome Contato</th>
+                <th>Telefone Contato</th>
+                <th>Apagar?</th>
+            </tr>
+           </thead>
+           <tbody id="contatos-lista">
+            <!--Os contatos irão aparecer aqui-->
+
+           </tbody>
+        </table>
+
+    </div>
+    <!--Inclusão JavaScript-->
+    <script src="./main.js"></script>
+</body>
+</html>
